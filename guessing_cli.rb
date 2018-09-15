@@ -1,6 +1,6 @@
 def run_guessing_game
   puts "Guess a number between 1 and 6."
-  roll = 1+rand(6)
+  roll = rand(1..6)
 	user_input = gets.chomp.to_s
     if user_input == roll
     	return "You guessed the correct number!"
@@ -11,6 +11,5 @@ def run_guessing_game
     else
       puts "Invalid input "
     end
-
 
 end
